@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<section id="intro">
+
+    <header>
+        <a href="/">
+            <img src="/img/logo-casa_criativa.png" alt="Imagem da logomarca">
+        </a>
+    </header>
+
+    <main>
+        <p>
+            Ficar em casa em períodos longos, não deve ser nada fácil.
+        </p>
+
+        <p>
+            Por isso iremos catalogar ideias, <strong>brincadeiras, jogos, filmes, 
+            livros, cursos, dicas</strong> e tudo que for necessário para tornar 
+            esse momento mais interessante.
+        </p>
+        
+        <p>
+            Comece clicando em ver ideias para ver as ideias cadastradas e contribua adicionado a sua.
+        </p>
+        
+        
+    </main>
+
+    <section id="buttons">
+        <button onclick="onOff()">+ Adicionar Ideia</button>
+        <a href="/ideias" class="button">Ver Ideias</a>
+    </section>
+
+    <footer>
+        Com 💜 <a href="https://hcode.com.br" target="_blank">João Rafael</a>
+    </footer>
+
+</section>
+
+<section id="last-ideas">
+    
+    {% include "all_ideas.html" %}
+
+</section>
+
+{% endblock %}
